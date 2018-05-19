@@ -32,6 +32,7 @@ For a detailed explanation on how things work, consult the [docs for vue-loader]
 ### Additional Dependencies
 > Packages installed for ease of development.
 * React Navigation - https://reactnavigation.org/
-* React Nativebase UI compponents - https://docs.nativebase.io/docs/GetStarted.html
+* React Nativebase UI components - https://docs.nativebase.io/docs/GetStarted.html
+* React Native Star Rating - https://github.com/djchie/react-native-star-rating
 
 #### Resources

@@ -1,16 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import {createDrawerNavigator} from 'react-navigation';
+
+// Screens
+import HomeScreen from './screens/HomeScreen';
+
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Here's some random stuff</Text>
-      </View>
+      <AppDrawNavigator />
     );
   }
 }
+
+const AppDrawNavigator = new createDrawerNavigator ({
+
+  HomeScreen: {screen: HomeScreen}
+})
 
 const styles = StyleSheet.create({
   container: {

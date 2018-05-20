@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 
 // Design Components
 import {Container, Content, Header, Left, Right, Icon, Item, Input} from 'native-base';
 
 // Icons
 import FAIcon from 'react-native-vector-icons/FontAwesome';
+import Swiper from 'react-native-swiper';
 
 class Homescreen extends Component {
   render() {
@@ -73,6 +74,38 @@ class Homescreen extends Component {
                         <Icon name="arrow-forward" style={{fontSize: 18, marginLeft: 2}}/>
                     </View>
                 </View>
+                <Swiper style={{height: 100}} autoplay={true}>
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{
+                                flex: 1,
+                                height: null,
+                                width:null,
+                                resizeMode: 'contain'
+                            }}
+                            source={require('../assets/swiper_2.jpg')}/>
+                    </View>
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{
+                                flex: 1,
+                                height: null,
+                                width:null,
+                                resizeMode: 'contain'
+                            }}
+                            source={require('../assets/swiper_3.jpg')}/>
+                    </View>
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{
+                                flex: 1,
+                                height: null,
+                                width:null,
+                                resizeMode: 'contain'
+                            }}
+                            source={require('../assets/swiper_2.jpg')}/>
+                    </View>
+                </Swiper>
             </Content>
         </Container>
     );

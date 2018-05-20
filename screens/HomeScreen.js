@@ -2,11 +2,14 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 
 // Design Components
-import {Container, Content, Header, Left, Right, Icon, Item, Input} from 'native-base';
+import {Container, Content, Header, Left, Right, Icon, Item, Input, Card, CardItem} from 'native-base';
 
 // Icons
 import FAIcon from 'react-native-vector-icons/FontAwesome';
 import Swiper from 'react-native-swiper';
+
+// Other Components
+import RecommendedCardItem from '../components/RecommendedCardItem';
 
 class Homescreen extends Component {
   render() {
@@ -106,6 +109,35 @@ class Homescreen extends Component {
                             source={require('../assets/swiper_2.jpg')}/>
                     </View>
                 </Swiper>
+                <Card>
+                    <CardItem header>
+                        <Text>Your Recommendations</Text>
+                    </CardItem>
+                    <RecommendedCardItem
+                        itemName="You can heal you life"
+                        itemCreator="Louise Hay"
+                        itemPrice="$10"
+                        savings="2.5"
+                        imageUri={require('./../assets/recommended_1.jpg')}
+                        rating={5}
+                    />
+                    <RecommendedCardItem
+                            itemName="Uncharted 4"
+                            itemCreator="Sony"
+                            itemPrice="$19.99"
+                            savings="17"
+                            imageUri={require("../assets/recommended_2.jpg")}
+                            rating={5}
+                        />
+                        <RecommendedCardItem
+                            itemName="Ea UFC 3"
+                            itemCreator="Ea Sports"
+                            itemPrice="$44"
+                            savings="6"
+                            imageUri={require("../assets/recommended_3.jpg")}
+                            rating={3}
+                        />
+                </Card>
             </Content>
         </Container>
     );

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 
-// Design Components
+// Native Base Components
 import {Container, Content, Header, Left, Right, Icon, Item, Input, Card, CardItem} from 'native-base';
 
 // Icons
@@ -17,7 +17,11 @@ class Homescreen extends Component {
         <Container>
             <Header style={styles.header}>
                 <Left style={styles.leftContainer} >
-                    <Icon name="md-menu" style={styles.menuIcon} />
+                    <Icon 
+                        name="md-menu" 
+                        onPress={() => this.props.navigation.openDrawer()} 
+                        style={styles.menuIcon}
+                    />
                     <FAIcon name="amazon" style={styles.logoIcon} />
                 </Left>
                 <Right>

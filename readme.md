@@ -1,3 +1,5 @@
+<img src="https://cdn.rawgit.com/lucasbento/react-native-actions/master/common/media/logo.png" alt="Drawing" style="width: 200px;height"/>
+
 # Amazon App UI Clone
 
 This project is a UI clone of the Amazon app on iOS and Android built with React Native.
@@ -11,14 +13,18 @@ This project is a UI clone of the Amazon app on iOS and Android built with React
 Project not deployed yet.
 
 ## Instructions
+
+### Prerequisites
+* Node.js and npm (installing Node.js also installs npm) - https://www.npmjs.com/
+* git - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+* react-native-cli - `npm install -g react-native-cli`
+* expo cli - `npm install exp --global`
+
 ### Build Setup
 
-``` bash
-# install expo cli
-npm install exp --global
-
+``` bash 
 # install dependencies
-npm insyall
+npm install
 
 # build for preview and view on expo app
 exp start
@@ -38,3 +44,4 @@ For a detailed explanation on how things work, consult the [docs for vue-loader]
 * React Native Swiper - https://github.com/leecade/react-native-swiper
 
 #### Resources
+[React Native Layout Series Unsure Programmer](https://www.youtube.com/watch?v=cgg1HidN4mQ&list=PLy9JCsy2u97l3tMqxpw5H1ePTR-eJai-4)

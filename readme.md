@@ -1,7 +1,6 @@
 <img src="https://cdn.rawgit.com/lucasbento/react-native-actions/master/common/media/logo.png" alt="Drawing" style="width: 200px;height"/>
 
 # Amazon App UI Clone
-
 This project is a UI clone of the Amazon app on iOS and Android built with React Native.
 
 ## Usage
